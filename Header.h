@@ -1,0 +1,16 @@
+#pragma once
+void L01E01();
+void L01E02();
+void L01E03();
+void L01K01();
+void L02E01T01();
+void L02E01T02();
+void L02E02T01();
+void L02E02T02();
+void L02E02T03_1();
+void L02E02T03_2();
+void L02E03();
+void L02E04();
+void L02K01();
+bool L02K02();
+void L02K03();
