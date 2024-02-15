@@ -13,5 +13,7 @@ int main()
 {
 	system("chcp 1251");
 
+	L03K02();
+
 	return 0;
 }

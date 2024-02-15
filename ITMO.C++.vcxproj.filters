@@ -24,6 +24,9 @@
     <ClCompile Include="LAB02.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="LAB03.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
