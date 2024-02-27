@@ -52,3 +52,5 @@ void L08E02();
 void L08E03();
 void L08E04();
 void L08K01();
+int L09E01();
+int L09E02();

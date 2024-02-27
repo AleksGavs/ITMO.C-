@@ -21,7 +21,8 @@ void Student::save()
 	}
 	fout << endl;
 	fout.close();
-}
+}
+
 // Конструктор Student
 Student::Student(string name, string last_name)
 {
@@ -64,4 +65,4 @@ void Student::set_average_score(double ball)
 double Student::get_average_score()
 {
 	return Student::average_score;
-}
+}

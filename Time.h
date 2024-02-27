@@ -16,6 +16,7 @@ public:
 
 	Time(int, int, int);
 	Time();
+	Time(string);
 
 	void ShowTime();
 	Time AddTime(Time);

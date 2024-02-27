@@ -1,6 +1,7 @@
 ﻿#include "Header.h"
 #include "Student.h"
 #include "Time.h"
+#include "Triangle.h"
 
 #include <iostream>
 #include <fstream>
@@ -20,9 +21,11 @@ using namespace std;
 int main()
 {
 	system("chcp 1251");	
+		
 	
-	L08K01();
+	return 0; 
+}
+
 	
-	return 0;
-}	
+
 

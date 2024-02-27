@@ -134,15 +134,18 @@
     <ClCompile Include="LAB06.cpp" />
     <ClCompile Include="LAB07.cpp" />
     <ClCompile Include="LAB08.cpp" />
+    <ClCompile Include="LAB09.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="LAB01.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

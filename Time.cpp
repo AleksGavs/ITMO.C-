@@ -4,6 +4,24 @@
 #include <iomanip>
 
 
+class WrongTimeName
+{
+public:
+	WrongTimeName() : message("Неверное название времени") { }
+	void printMessage() const { cout << message << endl; }
+private:
+	string message;
+};
+
+bool TimeNameExists(string timeName)
+{
+	if (timeName != "Полночь" && timeName != "Полдень")
+	{
+		throw WrongTimeName();
+	}
+	return true;
+}
+
 void Time::set_hours(int hours)
 {
 	Time::hours = hours;
@@ -85,6 +103,32 @@ Time::Time(int hours, int minutes, int seconds)
 	Time::set_minutes(minutes);
 	Time::set_seconds(seconds);	
 	
+}
+
+Time::Time(string time)
+{
+	try
+	{
+		bool exists = TimeNameExists(time);
+		if (time == "Полдень")
+		{
+			Time::set_hours(12);
+			Time::set_minutes(0);
+			Time::set_seconds(0);
+		}
+		else 
+		{
+			Time::set_hours(0);
+			Time::set_minutes(0);
+			Time::set_seconds(0);
+		}
+	}
+	catch (WrongTimeName& error)
+
+	{
+		cout << "ОШИБКА: ";
+		error.printMessage();
+	}
 }
 
 Time::Time()
