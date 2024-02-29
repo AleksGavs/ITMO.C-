@@ -24,11 +24,13 @@ void Student::save()
 }
 
 // Конструктор Student
-Student::Student(string name, string last_name)
+Student::Student(string name, string last_name, IdCard* id)
 {
 	Student::set_name(name);
 	Student::set_last_name(last_name);
+	Student::setIdCard(id);
 }
+
 // Установка имени студента
 void Student::set_name(std::string student_name)
 {
@@ -66,3 +68,14 @@ double Student::get_average_score()
 {
 	return Student::average_score;
 }
+
+void Student::setIdCard(IdCard* c)
+{
+	iCard = c;
+}
+
+IdCard Student::getIdCard()
+{
+	return *iCard;
+}
+

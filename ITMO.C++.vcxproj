@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dot.cpp" />
+    <ClCompile Include="IdCard.cpp" />
     <ClCompile Include="LAB02.cpp" />
     <ClCompile Include="LAB03.cpp" />
     <ClCompile Include="LAB04.cpp" />
@@ -135,17 +137,24 @@
     <ClCompile Include="LAB07.cpp" />
     <ClCompile Include="LAB08.cpp" />
     <ClCompile Include="LAB09.cpp" />
+    <ClCompile Include="LAB10.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="LAB01.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriangleAggr.cpp" />
+    <ClCompile Include="TriangleComp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dot.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="TriangleAggr.h" />
+    <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleComp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

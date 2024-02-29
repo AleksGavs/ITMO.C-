@@ -56,3 +56,5 @@ int L09E01();
 int L09E02();
 int L09K01();
 int L09K02();
+void L10E1();
+void L10K01();

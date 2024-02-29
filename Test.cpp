@@ -2,6 +2,8 @@
 #include "Student.h"
 #include "Time.h"
 #include "Triangle.h"
+#include "TriangleComp.h"
+#include "TriangleAggr.h"
 
 #include <iostream>
 #include <fstream>
@@ -16,12 +18,13 @@
 
 using namespace std;
 
-
+#include "dot.h"
 
 int main()
 {
 	system("chcp 1251");	
-		
+
+	L10K01();
 	
 	return 0; 
 }

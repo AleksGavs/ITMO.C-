@@ -1,16 +1,20 @@
 /* student.h */
 #pragma once /* Защита от двойного подключения заголовочного файла */
 #include <string>
+#include "IdCard.h"
 using namespace std;
 class Student
 {
 public:
+	IdCard* iCard;
+	void setIdCard(IdCard* c);
+	IdCard getIdCard();
 	// Запись данных о студенте в файл
 	void save();
 	// Деструктор класса Student
 	~Student();
 	// Конструктор класса Student
-	Student(string, string);
+	Student(string name, string last_name, IdCard* id);
 	// Установка имени студента
 	void set_name(string);
 	// Получение имени студента
