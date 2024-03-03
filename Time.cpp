@@ -62,22 +62,6 @@ Time Time::AddTime(Time t2)
 	int h = Time::get_hours() + t2.get_hours();
 	int m = Time::get_minutes() + t2.get_minutes();
 	int s = Time::get_seconds() + t2.get_seconds();
-	
-	if (s >= 60)
-	{
-		m += s / 60;
-		s %= 60;
-	}
-
-	if (m >= 60)
-	{
-		h += m / 60;
-		m %= 60;
-	}
-	if (h >= 24)
-	{
-		h %= 24;
-	}
 
 	return Time(h, m, s);
 }
@@ -137,5 +121,110 @@ Time::Time()
 	Time::set_minutes(00);
 	Time::set_seconds(00);
 }
+
+Time Time::operator+ (const Time& t2) const
+{
+	int h = hours + t2.hours;
+	int m = minutes + t2.minutes;
+	int s = seconds + t2.seconds;
+	
+	return Time(h, m, s);
+}
+
+Time Time::operator- (const Time& t2) const
+{
+	int h = hours - t2.hours;
+	int m = minutes - t2.minutes;
+	int s = seconds - t2.seconds;
+
+	if (s < 0)
+	{
+		s += 60; m--;
+	}
+	if (m < 0)
+	{
+		m += 60;
+		h--;
+	}
+	if (h < 0)
+	{
+		h += 24;
+	}
+	return Time(h, m, s);
+}
+
+	Time Time::operator+ (int val) const
+	{
+		Time d;
+		d.hours = val /60 / 60;
+		d.minutes = (val / 60) % 60;
+		d.seconds = val % 60;
+		return *this + d;
+	}
+
+	Time operator+(int val, const Time& d)
+	{
+		Time t;
+		t.set_hours(val / 60 / 60);
+		t.set_minutes((val / 60) % 60);
+		t.set_seconds(val % 60);
+		return d + t;
+	}
+
+
+	Time Time::operator- (int val) const
+	{
+		Time d; 
+		d.hours = val / 60 / 60;
+		d.minutes = (val / 60) % 60;
+		d.seconds = val % 60;
+		d.ShowTime();
+		return *this - d;
+	}
+
+	Time operator-(int val, const Time& d)
+	{
+		Time t;
+		t.set_hours(val / 60 / 60);
+		t.set_minutes((val / 60) % 60);
+		t.set_seconds(val % 60);
+				
+		return t - d;
+	}
+
+	bool Time::operator< (const Time& t2) const
+	{
+		if (hours != t2.hours)
+			return hours < t2.hours;
+		if (minutes != t2.minutes)
+			return minutes < t2.minutes;
+		return seconds < t2.seconds;
+	}
+
+	bool Time::operator> (const Time& t2) const
+	{
+		return t2 < *this;
+	}
+
+	bool Time::operator<= (const Time& t2) const
+	{
+		return !(t2 < *this);
+	}
+
+	bool Time::operator>= (const Time& t2) const
+	{
+		return !(*this < t2);
+	}
+
+	bool Time::operator== (const Time& t2) const
+	{
+		return hours == t2.hours && minutes == t2.minutes && seconds == t2.seconds;
+	}
+
+	bool Time::operator!= (const Time& t2) const
+	{
+		return !(*this == t2);
+	}
+	
 
 

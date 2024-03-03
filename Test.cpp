@@ -4,6 +4,11 @@
 #include "Triangle.h"
 #include "TriangleComp.h"
 #include "TriangleAggr.h"
+#include "Distance.h"
+#include "GradeMap.h"
+#include "Point.h"
+#include "Dot.h"
+
 
 #include <iostream>
 #include <fstream>
@@ -14,18 +19,18 @@
 #include <ctime>
 #include <vector>
 #include <tuple>
+#include <algorithm>
 
 
 using namespace std;
 
-#include "dot.h"
+
 
 int main()
 {
 	system("chcp 1251");	
 
-	L10K01();
-	
+
 	return 0; 
 }
 

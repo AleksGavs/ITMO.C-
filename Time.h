@@ -18,6 +18,19 @@ public:
 	Time();
 	Time(string);
 
+	Time operator+ (const Time&) const;
+	Time operator- (const Time&) const;
+	Time operator+ (int val) const;
+	Time operator- (int val) const;	
+	friend Time operator- (int val, const Time& d);
+	friend Time operator+ (int val, const Time& d);
+	bool operator< (const Time& t2) const;
+	bool operator> (const Time& t2) const;
+	bool operator<= (const Time& t2) const;
+	bool operator>= (const Time& t2) const;
+	bool operator== (const Time& t2) const;
+	bool operator!= (const Time& t2) const;
+
 	void ShowTime();
 	Time AddTime(Time);
 	

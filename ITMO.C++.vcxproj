@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Distance.cpp" />
     <ClCompile Include="Dot.cpp" />
+    <ClCompile Include="GradeMap.cpp" />
     <ClCompile Include="IdCard.cpp" />
     <ClCompile Include="LAB02.cpp" />
     <ClCompile Include="LAB03.cpp" />
@@ -138,6 +140,8 @@
     <ClCompile Include="LAB08.cpp" />
     <ClCompile Include="LAB09.cpp" />
     <ClCompile Include="LAB10.cpp" />
+    <ClCompile Include="LAB11.cpp" />
+    <ClCompile Include="Point.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="LAB01.cpp" />
@@ -147,8 +151,11 @@
     <ClCompile Include="TriangleComp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Distance.h" />
     <ClInclude Include="Dot.h" />
+    <ClInclude Include="GradeMap.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Point.h" />
     <ClInclude Include="TriangleAggr.h" />
     <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
