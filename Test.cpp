@@ -8,7 +8,12 @@
 #include "GradeMap.h"
 #include "Point.h"
 #include "Dot.h"
-
+#include "Student1.h"
+#include "Teacher.h"
+#include "Item.h"
+#include "AudioBook.h"
+#include "PaperBook.h"
+#include "Templates.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -28,12 +33,14 @@ using namespace std;
 
 int main()
 {
-	system("chcp 1251");	
+    SetConsoleOutputCP(1251);
 
+    
 
-	return 0; 
+    return 0;
 }
 
-	
+
+
 
 

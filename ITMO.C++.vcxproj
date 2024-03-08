@@ -141,8 +141,12 @@
     <ClCompile Include="LAB09.cpp" />
     <ClCompile Include="LAB10.cpp" />
     <ClCompile Include="LAB11.cpp" />
+    <ClCompile Include="LAB12.cpp" />
+    <ClCompile Include="LAB13.cpp" />
+    <ClCompile Include="LAB14.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Templates.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="LAB01.cpp" />
     <ClCompile Include="Time.cpp" />
@@ -151,11 +155,17 @@
     <ClCompile Include="TriangleComp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioBook.h" />
     <ClInclude Include="Distance.h" />
     <ClInclude Include="Dot.h" />
     <ClInclude Include="GradeMap.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Human.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="PaperBook.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Student1.h" />
+    <ClInclude Include="Teacher.h" />
     <ClInclude Include="TriangleAggr.h" />
     <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
